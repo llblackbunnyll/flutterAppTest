@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import './widgets/user_card.dart';
+import './widgets/my_statefulWidget.dart';
 
 void main() {
-  runApp(App());
+  runApp(MyWidget(name: "nuttawat"));
 }
 
 class App extends StatelessWidget {
@@ -26,14 +27,6 @@ class App extends StatelessWidget {
     );
   }
 }
-//StatelessWidget
-//StatefulWidget
-// class Custom extends StatelessWidget {
-//   Widget build(BuildContext context) {
-//     return Text("test Custom widget");
-//   }
-// }
-
 
 
 
