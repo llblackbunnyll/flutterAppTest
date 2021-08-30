@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import './widgets/user_card.dart';
-import './widgets/my_statefulWidget.dart';
+import './widgets/container.dart';
+import './widgets/center.dart';
+import './widgets/padding.dart';
 
 void main() {
-  runApp(MyWidget(name: "nuttawat"));
+  runApp(TestContainer());
 }
 
 class App extends StatelessWidget {
