@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:new_app/widgets/image.dart';
+import 'package:new_app/widgets/stack.dart';
 import './widgets/user_card.dart';
 import './widgets/container.dart';
 import './widgets/center.dart';
 import './widgets/padding.dart';
+import './widgets/column.dart';
+import './widgets/row.dart';
 
 void main() {
-  runApp(TestContainer());
+  runApp(testImages());
 }
 
 class App extends StatelessWidget {
