@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:new_app/widgets/bottomNav.dart';
 import 'package:new_app/widgets/image.dart';
+import 'package:new_app/widgets/homeScreen.dart';
 import 'package:new_app/widgets/stack.dart';
 import './widgets/user_card.dart';
 import './widgets/container.dart';
@@ -9,7 +11,7 @@ import './widgets/column.dart';
 import './widgets/row.dart';
 
 void main() {
-  runApp(testImages());
+  runApp(App());
 }
 
 class App extends StatelessWidget {
@@ -18,21 +20,32 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Custom widget',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('statelesswidget'),
-        ),
-        backgroundColor: Colors.brown,
-        body: SafeArea(
-          child: Usercard(
-            userName: "nuttawat",
-            userUrl: "https://picsum.photos/200/300",
-          ),
-        ),
-      ),
+      home: BottomNav(),
     );
   }
 }
+
+// class App extends StatelessWidget {
+//   //const App({ Key? key }) : super(key: key);
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       title: 'Custom widget',
+//       home: Scaffold(
+//         appBar: AppBar(
+//           title: Text('statelesswidget'),
+//         ),
+//         backgroundColor: Colors.brown,
+//         body: SafeArea(
+//           child: Usercard(
+//             userName: "nuttawat",
+//             userUrl: "https://picsum.photos/200/300",
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }
 
 
 
