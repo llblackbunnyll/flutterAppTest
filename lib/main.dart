@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:new_app/widgets/bottomNav.dart';
+import 'package:new_app/widgets/form.dart';
 import 'package:new_app/widgets/image.dart';
 import 'package:new_app/widgets/homeScreen.dart';
 import 'package:new_app/widgets/stack.dart';
@@ -20,7 +21,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Custom widget',
-      home: BottomNav(),
+      home: MyCustomForm(),
     );
   }
 }
